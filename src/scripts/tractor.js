@@ -8,7 +8,6 @@ import { createWheat } from "./seeds/wheat.js"
 
 export const plantSeeds = (yearlyPlan) => {
 
-    debugger
     for(const row of yearlyPlan) {
         for(const plot of row) {
             switch(plot) {
