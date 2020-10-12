@@ -8,5 +8,6 @@ const yearlyPlan = createPlan();
 plantSeeds(yearlyPlan);
 sortPlants();
 const plantedField = usePlants();
+console.log(plantedField);
 const plantYield = harvestPlants(plantedField);
 Catalog(plantYield);

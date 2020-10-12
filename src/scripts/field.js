@@ -1,12 +1,17 @@
 let growingPlants = [];
+let id = 0;
 
 export const addPlant = (seedObj) => {
     if(Array.isArray(seedObj)) {
         for(const seed of seedObj) {
+            seed.id = id;
             growingPlants.push(seed);
+            id++;
         }
     } else {
+        seedObj.id = id;
         growingPlants.push(seedObj);
+        id++;
     }
 }
 
